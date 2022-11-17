@@ -40,13 +40,13 @@ public class LoginActivity extends AppCompatActivity {
         });
         ImageView mGirl = findViewById(R.id.girl);
 
-       /* Glide.with(this).load("https://www.wsupercars.com/wallpapers-phone/Formula-1/Scuderia-Ferrari/2022-Formula1-Ferrari-F1-75-010-2400p.jpg")
+        Glide.with(this).load("https://www.wsupercars.com/wallpapers-phone/Formula-1/Scuderia-Ferrari/2022-Formula1-Ferrari-F1-75-010-2400p.jpg")
                 //https://www.acfligue.org/wp-content/uploads/2021/12/custom_showroom_1654840098.png
                 .transition(DrawableTransitionOptions.withCrossFade(1000))
                 .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))
                .centerCrop()
                //.circleCrop()
-                .into(mGirl);*/
+                .into(mGirl);
 
     }
 

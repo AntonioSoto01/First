@@ -44,7 +44,7 @@ public class Splash extends AppCompatActivity {
        //    Glide for loading girls
        ImageView mSea = findViewById(R.id.backView);
 
-       Glide.with(this).load("https://www.wsupercars.com/wallpapers-phone/Formula-1/Scuderia-Ferrari/2022-Formula1-Ferrari-F1-75-010-2400p.jpg")
+       Glide.with(this).load("https://besthqwallpapers.com/Uploads/29-7-2017/17299/thumb2-ferrari-ferrari-emblem-silk-flag-logo-italian-auto-giant.jpg")
                //https://www.acfligue.org/wp-content/uploads/2021/12/custom_showroom_1654840098.png
                .transition(DrawableTransitionOptions.withCrossFade(1000))
                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))
