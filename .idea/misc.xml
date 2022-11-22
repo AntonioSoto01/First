@@ -23,8 +23,10 @@
         <entry key="..\:/Diurno/Interfaces/DI_fundamentals/app/src/main/res/mipmap-anydpi-v26/ic_casco_round.xml" value="0.184" />
         <entry key="..\:/Diurno/Interfaces/DI_fundamentals/app/src/main/res/mipmap-anydpi-v26/ic_coronalauncher.xml" value="0.2505" />
         <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/layout/activity_login.xml" value="0.3151041666666667" />
+        <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/layout/activity_signup.xml" value="0.36666666666666664" />
         <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
+        <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/menu/menu_context.xml" value="0.23148148148148148" />
       </map>
     </option>
   </component>
