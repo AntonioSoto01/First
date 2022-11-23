@@ -6,6 +6,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.os.Bundle;
 import android.view.ContextMenu;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
@@ -54,6 +55,15 @@ public class Main extends AppCompatActivity {
             swipeLayout.setRefreshing(false);
         }
     };
+
+    //implementing ActionBar/AppBar menu
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_appbar, menu);
+        return true;
+    }
     @Override
 //    public void onCreateContextMenu(ContextMenu menu, View v,
 //                                    ContextMenu.ContextMenuInfo menuInfo) {

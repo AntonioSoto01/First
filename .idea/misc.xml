@@ -22,10 +22,16 @@
         <entry key="..\:/Diurno/Interfaces/DI_fundamentals/app/src/main/res/mipmap-anydpi-v26/ic_casco.xml" value="0.184" />
         <entry key="..\:/Diurno/Interfaces/DI_fundamentals/app/src/main/res/mipmap-anydpi-v26/ic_casco_round.xml" value="0.184" />
         <entry key="..\:/Diurno/Interfaces/DI_fundamentals/app/src/main/res/mipmap-anydpi-v26/ic_coronalauncher.xml" value="0.2505" />
+        <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/layout-land/activity_login.xml" value="0.1" />
+        <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/layout-land/activity_login2.xml" value="0.4505208333333333" />
+        <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/layout-land/activity_signup.xml" value="0.6317708333333333" />
+        <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/layout-land/activity_splash.xml" value="0.27887788778877887" />
         <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/layout/activity_login.xml" value="0.3151041666666667" />
+        <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/layout/activity_login2.xml" value="0.36666666666666664" />
         <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/layout/activity_signup.xml" value="0.36666666666666664" />
         <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
+        <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/menu/menu_appbar.xml" value="0.365625" />
         <entry key="..\:/Diurno/Interfaces/First/app/src/main/res/menu/menu_context.xml" value="0.23148148148148148" />
       </map>
     </option>
