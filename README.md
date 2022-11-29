@@ -17,9 +17,9 @@
 
 
 ![image](https://user-images.githubusercontent.com/116081477/204355747-bb812f6b-2d9d-4b28-aed0-eb3778656706.png)
-###### Change the image on swipe and shows menu.
+###### Change the image on swipe and shows Snackbar.
 
 
 ![image](https://user-images.githubusercontent.com/116081477/204355980-99c72849-50ec-43ec-b35e-2087defdae29.png)
 ![image](https://user-images.githubusercontent.com/116081477/204356197-52fa7c30-76b8-49d0-b895-37c61eb316e4.png)
-###### Snackbar.
+###### Menu.
