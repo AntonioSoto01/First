@@ -1,9 +1,12 @@
 package com.AS.First;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -13,6 +16,7 @@ import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
 public class Main extends AppCompatActivity {
@@ -55,7 +59,99 @@ public class Main extends AppCompatActivity {
             swipeLayout.setRefreshing(false);
         }
     };
+    /*-------------------------------------------------*/
 
+    /*El builder serán las acciones que realicemos al pulsar sobre el boton de signout*/
+    public void showAlertDialogButtonClicked(Main mainActivity) {
+
+        // setup the alert builder
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+
+//        //el dialogo estandar tiene título/icono pero podemos sustituirlo
+//        //por un XML a medida
+        builder.setTitle("Por que tan rápido");
+        builder.setMessage("Where do you go?");
+        builder.setIcon(R.drawable.ic_f1_car_svgrepo_com);
+        builder.setCancelable(false);
+
+//        // un XML a medida para el diálogo
+//        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
+
+        // add the buttons
+        builder.setPositiveButton("Signout", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // do something like...
+                Intent intent = new Intent(Main.this, LoginActivity.class);
+                startActivity(intent);
+                dialog.dismiss();
+
+            }
+        });
+        builder.setNegativeButton("Stay Here", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                // do something like...
+
+                dialog.dismiss();
+            }
+        });
+
+        builder.setNeutralButton("Exit", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                // do something like...
+                dialog.dismiss();
+                System.exit(0);
+
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+    public boolean onOptionsItemSelected (MenuItem item){
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        if (id == R.id.item2) {
+//            showAlertDialogButtonClicked(Main.this);
+
+            Toast toast8 = Toast.makeText(this, "Settings", Toast.LENGTH_LONG);
+            toast8.show();
+
+        }
+        if (id == R.id.item1) {
+            /*muestra buscar al pulsar sobre el boton*/
+            Toast toast9 = Toast.makeText(this, "Search", Toast.LENGTH_LONG);
+            toast9.show();
+        }
+
+        if (id == R.id.item3) {
+            /*nos lleva al login activity al puslsar sobre el boton*/
+            Intent intent = new Intent(Main.this, LoginActivity.class);
+            startActivity(intent);
+        }
+
+        if (id == R.id.item4) {
+            /*nos lleva al login activity al puslsar sobre el boton*/
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+        }
+
+        if (id == R.id.item5) {
+            showAlertDialogButtonClicked(Main.this);
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+    /*----------------------------------------------------*/
     //implementing ActionBar/AppBar menu
 
     @Override
@@ -113,4 +209,5 @@ public class Main extends AppCompatActivity {
         }
 
     }
+
 }

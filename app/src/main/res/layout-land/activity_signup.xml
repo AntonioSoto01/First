@@ -16,9 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:src="@drawable/ic_f1_car_svgrepo_com"
-        android:id="@+id/car"
-
-        >
+        android:id="@+id/car">
 
     </ImageView>
     <com.google.android.material.textfield.TextInputLayout

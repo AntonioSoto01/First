@@ -7,13 +7,12 @@
     tools:context=".LoginActivity"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="-356dp"
-    android:background="@drawable/gradient">
+    android:background="@drawable/ic_coronalauncher_background">
 
     <ImageView
         android:id="@+id/girl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         android:scaleType="fitStart"/>
     <ImageView
         android:layout_width="100dp"
