@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,12 +19,13 @@ public class LoginActivity extends AppCompatActivity {
 
    TextView enlaceSup;
     ImageView car;
-
+Button login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         enlaceSup = findViewById(R.id.enlaceSup);
+        login = findViewById(R.id.login);
         //car= findViewById(R.id.car);
         ImageView car = findViewById(R.id.car);
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.fadein);
@@ -38,6 +40,13 @@ public class LoginActivity extends AppCompatActivity {
             }
 
         });
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMain();
+            }
+
+        });
         ImageView mGirl = findViewById(R.id.girl);
 
         Glide.with(this).load("https://www.wsupercars.com/wallpapers-phone/Formula-1/Scuderia-Ferrari/2022-Formula1-Ferrari-F1-75-010-2400p.jpg")
@@ -49,7 +58,13 @@ public class LoginActivity extends AppCompatActivity {
                 .into(mGirl);
 
     }
+    public void openMain() {
+        Intent intent = new Intent(LoginActivity.this, Main.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
 
+    }
     public void openSignUp(){
         Intent intent = new Intent(this, SignupActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

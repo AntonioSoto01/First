@@ -135,7 +135,7 @@ public class Main extends AppCompatActivity {
 
         if (id == R.id.item3) {
             /*nos lleva al login activity al puslsar sobre el boton*/
-            Intent intent = new Intent(Main.this, LoginActivity.class);
+            Intent intent = new Intent(Main.this, MainBab.class);
             startActivity(intent);
         }
 

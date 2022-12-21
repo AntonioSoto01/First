@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FIRST</string>
+    <string name="bottom_app_bar_label_title">Barra abajo</string>
+    <string name="username">Nombre de Usuario</string>
+    <string name="Login">ENTRAR</string>
+    <string name="Cancel">CANCELAR</string>
+</resources>

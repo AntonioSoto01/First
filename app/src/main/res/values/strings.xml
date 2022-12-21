@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">Fundamentals</string>
+    <string name="app_name">FIRST</string>
     <string name="bottom_app_bar_label_title">Bottom app bar</string>
+    <string name="username">Username</string>
+    <string name="Login">LOGIN</string>
+    <string name="Cancel">CANCEL</string>
 </resources>

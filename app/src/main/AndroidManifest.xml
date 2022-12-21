@@ -13,18 +13,26 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/ic_f1_car_svgrepo_com"
         android:supportsRtl="true"
-        android:theme="@style/MyTheme"
+        android:theme="@style/Theme.Fundamentals"
         tools:targetApi="31">
         <activity
+            android:name=".MainBab"
+            android:exported="true" >
+<!--            <intent-filter>-->
+<!--            <action android:name="android.intent.action.MAIN" />-->
+
+<!--            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--        </intent-filter>-->
+        </activity>
+        <activity
             android:name=".Main"
-            android:exported="true">
-<!--            android:theme="@style/MyTheme.NoActionBar"-->
+            android:exported="true"
+            android:theme="@style/Theme.Fundamentals">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
         <activity
             android:name=".Splash"
